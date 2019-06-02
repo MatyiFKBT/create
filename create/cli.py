@@ -6,6 +6,23 @@ import click
 from github import Github
 import subprocess
 import os
+import configparser
+
+cp = configparser.ConfigParser()
+txtpath = os.path.dirname(os.path.abspath(__file__))+'/config.txt'
+token = ''
+try:
+    with open(txtpath) as f:
+        cp.read_file(f)
+        token = cp.get('Config','password') 
+        print(token)
+except:
+    cfgfile = open(txtpath,'w')
+    cp.add_section('Config')
+    token = str(input('There are no saved Github access tokens saved.\nPlease enter your Github token: '))
+    cp.set('Config','password',token)
+    cp.write(cfgfile)
+    cfgfile.close()
 
 def subrun(string):
   subprocess.run(string.split())
@@ -15,7 +32,8 @@ def subrun(string):
 def main(project):
     """Console script for create."""
     path = "D:/Google Drive/Works/"
-    g = Github("13b7dfed32c0782191dd613da4dcbc6e8f599d9b").get_user()
+    print(token)
+    g = Github(token).get_user()
 
     try:
         os.makedirs(path+project)
