@@ -7,7 +7,6 @@
 import unittest
 from click.testing import CliRunner
 
-from create import create
 from create import cli
 
 
