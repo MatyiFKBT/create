@@ -12,7 +12,7 @@ To install create, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install create
+    $ pip install mcreate
 
 This is the preferred method to install create, as it will always install the most recent stable release.
 
