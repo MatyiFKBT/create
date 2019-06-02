@@ -1,13 +1,13 @@
 ======
-create
+mcreate
 ======
 
 
-.. image:: https://img.shields.io/pypi/v/create.svg
-        :target: https://pypi.python.org/pypi/create
+.. image:: https://img.shields.io/pypi/v/mcreate.svg
+        :target: https://pypi.python.org/pypi/mcreate
 
-.. image:: https://img.shields.io/travis/matyifkbt/create.svg
-        :target: https://travis-ci.org/matyifkbt/create
+.. image:: https://img.shields.io/travis/matyifkbt/mcreate.svg
+        :target: https://travis-ci.org/matyifkbt/mcreate
 
 .. image:: https://readthedocs.org/projects/create/badge/?version=latest
         :target: https://create.readthedocs.io/en/latest/?badge=latest
