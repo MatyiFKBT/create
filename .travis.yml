@@ -7,11 +7,10 @@ install: pip install -U tox-travis
 script: tox
 deploy:
   provider: pypi
-  distributions: sdist
+  distributions: bdist
   user: matyi
   password:
     secure: NNrcNCOL8o6asoDksBmHK06iFLlrQdOhiYiNPGmc8MVaI5MTT8lRT4Acp7OMjd1leIHMtdj7+KW/CVwojDg9k04L/b+4v6HwPD50wI/efc9qGmGnU/bLu8ERvEHNHWVGMtXoaFVgEasBPUO3z2lZMJptYcBMQA3MP9GhMlFFUPe6Y1hqCm5RK7VX542GWlDHdHdYYf312LB0wl6j4THlXa1YmRg4oRDwqhdD2+gF7Pbo0ts3z8mPd1GfjTS0jvd3wIsvB4MI3GUc/zc18dku2AoLkMVCpga39r/jobh/+PR6kaXbdWvKZWCMGmxmD1GVH/lflCie6NFQZ6tXFWvnckqqIpW4a8ipL9EybdFj4uq9PqTsWPZ1xjndpPt9r1BC+Hxfchye37hRSJFckQ8/B4vD3KuSSTgX60Ku2MwcRuzMNuhjnTJlsL3rhtcp6A2hbJakZ8RDO7J7ilL9hRPfi+h4OyHaLbfVPyK7NbQ9yZvpdHx8gOMFpG0pEVRdd4hQb979GtJ1Qn7M0PTecwzj6Do/CfzeXiwDpnn4fyz4ZMW3e/AClYHxaV88JPcrs85FN2FITBNDq8oSICIDe0CkzSQ0Auzmw2eVKbj3ZsGzNDII4P/HiQkBoSaJWOYZrOc0mUJaTAt2leCHMkc0Q8h2HEczzhePXJ6YcpE6MIbRKTI=
   on:
     tags: true
-    repo: matyi/mcreate
     python: 3.6
